@@ -12,10 +12,26 @@ A dataset containig information on some movies' English level is provided by Yan
 
 ## Project composition
 
+File system is left as it was given from the customer
+
 This project is devided on three notebooks:
 * `english_level_dataset.ipynb`: forms a dataset from all the data and saves it into `text_labels.csv` file
 * `english_level_modeling.ipynb`: takes `text_labels.csv` file, does text processing, modeling and saves model `english_labels_model.pkl` file
 * `english_level_servise.ipynb`: allows to label provided `.srt` file using the saved model
 
 # Project status
- This project is now finished yet
+ This project utilises basic functionality (in other words, it just works). You need to run notebook and have libraries installed and packages downloaded, so it's not very user-friendly now.
+ 
+# To-do list:
+* make the project more user-friendly
+* * move all custom functions from all notebooks to `english_level_functions.py` file
+* * move all packages downloads to `english_level_functions.py`
+* * add checks if modules and packages are installed
+* launch a streamlit application
+* improve predicting ability
+* * find better text preprocessing pipelines
+* * try other classic ML models
+* * perform feature engineering
+* * try deep learning
+* enrich data
+* * find new labeled movies and subtitles
