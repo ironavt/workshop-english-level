@@ -16,7 +16,7 @@ File system is left as it was given from the customer
 
 This project is devided on three notebooks:
 * `english_level_dataset.ipynb`: forms a dataset from all the data and saves it into `text_labels.csv` file
-* `english_level_modeling.ipynb`: takes `text_labels.csv` file, does text processing, modeling and saves model `english_labels_model.pkl` file
+* `english_level_modeling.ipynb`: takes `text_labels.csv` file, performs text processing, modeling and saves model `english_labels_model.pkl` file
 * `english_level_servise.ipynb`: allows to label provided `.srt` file using the saved model
 
 # Project status
