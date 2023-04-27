@@ -201,7 +201,7 @@ def report(y_test, y_pred):
     print('Confusion matrix:')
     sns.heatmap(pd.DataFrame(confusion_matrix(y_test, y_pred, labels=['A2', 'B1', 'B2', 'C1']),
                              index=['true A2', 'true B1', 'true B2', 'true C1'],
-                             columns=['false A2', 'false B1', 'false B2', 'false C1']),
+                             columns=['pred A2', 'pred B1', 'pred B2', 'pred C1']),
                 annot=True)
     plt.show()
     print(classification_report(y_test, y_pred))
